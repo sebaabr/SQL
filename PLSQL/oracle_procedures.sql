@@ -73,7 +73,7 @@ Wyzwalacz film_checher sprawdza czy dane wprowadzane do tabeli film sa poprawne
 - czas trwania powinien byc dluzszy niz 10 min
 - rok produkcji powinien byc nie wczesniejszy niz 1895
 */
-CREATE OR REPLACE TRIGGER film_checher
+CREATE OR REPLACE TRIGGER film_checker
 BEFORE update or insert on film 
 for each row
 DECLARE
