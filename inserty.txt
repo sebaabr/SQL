@@ -1,0 +1,133 @@
+
+INSERT INTO kraj values (1,'USA');
+INSERT INTO kraj values (2,'Nowa Zelandia');
+INSERT INTO kraj values (3,'Wielka Brytania');
+
+INSERT INTO gatunek VALUES (1,'Dramat', 'Gatunek filmowy zawierajacy najczesciej utwory o charakterze fabularnym , rzadziej takze dokumentalnym , ktorych struktura ma za zadanie poruszyc emocje widza. Akcja filmu skupia sie wokol glownego konfliktu.');
+INSERT INTO gatunek VALUES(2,'Thriller', 'Gatunek filmowy majacegy wywolac u czytelnika badz widza dreszcz emocji. Wykorzystuje on napiecie, niepewnosc i tajemniczosc jako glowne elementy utworu');
+INSERT INTO gatunek VALUES(3,'Animacja', 'utwor filmowy (w tym tak forma kinematograficzna, jak i sama technika zdjeciowa) zrealizowany za pomoca metod animacji. Sklada sie on z serii zdjec, ktore przedstawiaja nastepujace po sobie fazy ruchu.');
+INSERT INTO gatunek VALUES(4,'Akcja', 'film sensacyjny, ktorego glownym zadaniem jest dostarczanie rozrywki widzom poprzez pokazywanie poscigow samochodowych, strzelanin, bijatyk i innych scen kaskaderskich o duzym ladunku napiecia i emocji.');
+INSERT INTO gatunek VALUES(5,'Fantasy', 'Gatunek uzywajacy magicznych i innych nadprzyrodzonych form, motywow, jako pierwszorzednego skladnika fabuly, mysli przewodniej, czasu, miejsca akcji, postaci i okolicznosci zdarzen');
+INSERT INTO gatunek VALUES(6,'Kryminal', 'Gatunek charakteryzujacy sie fabula zorganizowana wokol zbrodni, okolicznosci dojscia do niej, dochodzenia oraz ujawnienia osoby sprawcy.');
+INSERT INTO gatunek VALUES(7,'Przygodowy',' film o akcji skonstruowanej z ciagu przygod protagonisty, charakteryzujacy sie szybkim tempem akcji, brawurowymi rozwiazaniami fabularnymi oraz licznymi przeszkodami pokonywanymi przez bohaterow.');
+
+
+INSERT INTO film VALUES(1,'DWUNASTU GNIEWNYCH LUDZI', 'Dwunastu przysieglych ma wydac wyrok w procesie o morderstwo. Jeden z nich ma watpliwosci dotyczace winy oskarzonego',96,1957,'1957-04-10',1,1);
+
+
+INSERT INTO film VALUES(2,'AVENGERS: WOJNA BEZ GRANIC', 'Potezny Thanos zbiera Kamienie Nieskonczonosci w celu narzucenia swojej woli wszystkim istnieniom we wszechswiecie. Tylko druzyna superbohaterow znanych jako Avengers moze go powstrzymac.',149,2018,'2018-04-23',1,4);
+INSERT INTO film VALUES(3,'JOKER', 'Strudzony zyciem komik popada w obled i staje sie psychopatycznym morderca.',122,2019,'2019-08-31',1,1);
+INSERT INTO film VALUES(4,'WLADCA PIERSCIENI: DWIE WIEZE', 'Druzyna Pierscienia zostaje rozbita, lecz zdesperowany Frodo za wszelka cene chce wypelnic powierzone mu zadanie. Aragorn z towarzyszami przygotowuje sie, by odeprzec atak hord Sarumana.',179,2002,'2002-12-05',2,4);
+INSERT INTO film VALUES(5,'SHERLOCK HOLMES: GRA CIENI', 'Druga odslona przygod genialnego detektywa Sherlocka Holmesa i jego przyjaciela dra Johna Watsona. Tym razem bohaterowie sa na tropie profesora Jamesa Moriartyego.',129,2011,'2011-12-10',1,6);
+INSERT INTO film VALUES(6,'PIRACI Z KARAIBOW SKRZ. UMARL.', 'Jack Sparrow musi splacic dlug zaciagniety wobec kapitana Latajacego Holendra. Uniknie smierci, gdy znajdzie i zniszczy serce Davyego Jonesa ukryte w Skrzyni Umarlaka.',150,2006,'2006-06-24',1,5);
+INSERT INTO film VALUES(7,'PIRACI Z KARAIBOW KL. CZARN. PERLY', 'Kowal Will Turner sprzymierza sie z kapitanem Jackiem Sparrowem, by odzyskac swoja milosc - porwana corke gubernatora.',143,2003,'2003-06-28',1,5);
+INSERT INTO film VALUES(8,'KROL LEW', 'Targany nieslusznymi wyrzutami sumienia po smierci ojca maly lew Simba skazuje sie na wygnanie, rezygnujac z przynaleznego mu miejsca na czele stada.',99,1994,'1994-06-15',1,3);
+INSERT INTO film VALUES(9,'INCEPCJA', 'Czasy, gdy technologia pozwala na wchodzenie w swiat snow. Zlodziej Cobb ma za zadanie wszczepic mysl do spiacego umyslu.',148,2010,'2010-07-08',3,2);
+
+
+INSERT INTO nagroda VALUES (1, 'BAFTA');
+INSERT INTO nagroda VALUES (2, 'Berlinale');
+INSERT INTO nagroda VALUES (3, 'Saturny');
+INSERT INTO nagroda VALUES (4, 'Oscara');
+INSERT INTO nagroda VALUES (5, 'Zlote Globy');
+
+
+INSERT INTO FILM_NAGRODA VALUES(1,1,1958);
+INSERT INTO FILM_NAGRODA VALUES(1,2,1957);
+
+INSERT INTO FILM_NAGRODA VALUES(2,3,2019);
+
+INSERT INTO FILM_NAGRODA VALUES(3,4,2020);
+INSERT INTO FILM_NAGRODA VALUES(3,1,2020);
+INSERT INTO FILM_NAGRODA VALUES(3,5,2020);
+INSERT INTO FILM_NAGRODA VALUES(3,3,2020);
+
+INSERT INTO FILM_NAGRODA VALUES(4,4,2003);
+INSERT INTO FILM_NAGRODA VALUES(4,1,2003);
+INSERT INTO FILM_NAGRODA VALUES(4,3,2004);
+
+INSERT INTO FILM_NAGRODA VALUES(6,4,2007);
+INSERT INTO FILM_NAGRODA VALUES(6,1,2007);
+INSERT INTO FILM_NAGRODA VALUES(6,3,2007);
+
+INSERT INTO FILM_NAGRODA VALUES(7,1,2004);
+INSERT INTO FILM_NAGRODA VALUES(7,3,2004);
+
+INSERT INTO FILM_NAGRODA VALUES(8,4,1995);
+INSERT INTO FILM_NAGRODA VALUES(8,5,1995);
+
+INSERT INTO FILM_NAGRODA VALUES(9,4,2011);
+INSERT INTO FILM_NAGRODA VALUES(9,1,2011);
+INSERT INTO FILM_NAGRODA VALUES(9,3,2011);
+
+
+INSERT INTO status VALUES(1, 'Aktywne');
+INSERT INTO status VALUES(2, 'Nieaktywne');
+INSERT INTO status VALUES(3, 'Premium');
+
+
+
+INSERT INTO uzytkownik VALUES (1, 'Jan', 'Kowalski', '1998-03-10');
+INSERT INTO uzytkownik VALUES (2, 'Tomasz', 'Nowak', '1997-06-06');
+INSERT INTO uzytkownik VALUES (3, 'Olga', 'Sasin', '1996-08-12');
+INSERT INTO uzytkownik VALUES (4, 'Wanda', 'Duda', '1995-05-16');
+INSERT INTO uzytkownik VALUES (5, 'Krzysztof', 'Kwasniewski', '1994-10-19');
+INSERT INTO uzytkownik VALUES (6, 'Mariusz', 'Szyc', '1993-01-20');
+INSERT INTO uzytkownik VALUES (7, 'Anna', 'Schetyna', '2000-02-06');
+INSERT INTO uzytkownik VALUES (8, 'Marta', 'Budka', '2001-03-28');
+INSERT INTO uzytkownik VALUES (9, 'Daria', 'Adamczyk', '2002-04-21');
+INSERT INTO uzytkownik VALUES (10, 'Julia', 'Gorniak', '2003-05-08');
+INSERT INTO uzytkownik VALUES (11, 'Mateusz', 'Janda', '1999-06-06');
+INSERT INTO uzytkownik VALUES (12, 'Szymon', 'Kowalski', '1998-07-13');
+INSERT INTO uzytkownik VALUES (13, 'Natalia', 'Nowak', '1995-08-09');
+INSERT INTO uzytkownik VALUES (14, 'Jan', 'Wisniewski', '1998-09-10');
+INSERT INTO uzytkownik VALUES (15, 'Anna', 'Wesolowska', '1998-10-17');
+
+
+INSERT INTO konto VALUES(1, 1, 1,2,3,null, null, '2015-10-09');
+INSERT INTO konto VALUES(2, 1, 4,null,null,null, null, '2018-06-15');
+INSERT INTO konto VALUES(3, 1, 5,6,null,null, null, '2012-09-20');
+INSERT INTO konto VALUES(4, 1, 7,8,9,null, null, '2009-08-03');
+INSERT INTO konto VALUES(5, 3, 10,11,12,13,14, '2010-07-07');
+INSERT INTO konto VALUES(6, 2, 15,null,null,null, null, '2020-06-09');
+
+
+
+INSERT INTO ocena VALUES(1,1);
+INSERT INTO ocena VALUES(2,2);
+INSERT INTO ocena VALUES(3,3);
+INSERT INTO ocena VALUES(4,4);
+INSERT INTO ocena VALUES(5,5);
+INSERT INTO ocena VALUES(6,6);
+INSERT INTO ocena VALUES(7,7);
+INSERT INTO ocena VALUES(8,8);
+INSERT INTO ocena VALUES(9,9);
+INSERT INTO ocena VALUES(10,10);
+
+
+
+INSERT INTO uzytkownik_film VALUES(1, 9,1,10);
+INSERT INTO uzytkownik_film VALUES(2, 8,2,2);
+INSERT INTO uzytkownik_film VALUES(3, 7,3,3);
+INSERT INTO uzytkownik_film VALUES(4, 6,4,4);
+INSERT INTO uzytkownik_film VALUES(5, 5,5,5);
+INSERT INTO uzytkownik_film VALUES(6, 4,6,1);
+INSERT INTO uzytkownik_film VALUES(7, 3,7,null);
+INSERT INTO uzytkownik_film VALUES(8, 2,8,null);
+INSERT INTO uzytkownik_film VALUES(9, 1,9,7);
+INSERT INTO uzytkownik_film VALUES(10, 10,8,9);
+INSERT INTO uzytkownik_film VALUES(11,11,7,1);
+INSERT INTO uzytkownik_film VALUES(12, 12,6,2);
+INSERT INTO uzytkownik_film VALUES(13, 13,5,5);
+INSERT INTO uzytkownik_film VALUES(14, 14,4,6);
+INSERT INTO uzytkownik_film VALUES(15, 10,3,10);
+INSERT INTO uzytkownik_film VALUES(16, 1,2,null);
+INSERT INTO uzytkownik_film VALUES(17, 2,1,3);
+INSERT INTO uzytkownik_film VALUES(18, 13,9,8);
+INSERT INTO uzytkownik_film VALUES(19, 4,8,7);
+INSERT INTO uzytkownik_film VALUES(20, 13,7,10);
+INSERT INTO uzytkownik_film VALUES(21, 14,7,10);
+INSERT INTO uzytkownik_film VALUES(22, 13,7,7);
+INSERT INTO uzytkownik_film VALUES(23, 12,6,8);
+INSERT INTO uzytkownik_film VALUES(24, 11,5,9);
+INSERT INTO uzytkownik_film VALUES(25, 9,4,1);
